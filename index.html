@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroFacility | Gestión Integral de Activos e Incidencias en Espacios Aeroportuarios</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-white shadow-lg shadow-cyan-500/20">
+          AF
+        </div>
+        <span class="text-xl font-bold tracking-tight text-white">Aero<span class="text-cyan-400">Facility</span></span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <a href="#solucion" class="hover:text-cyan-400 transition">Solución</a>
+        <a href="#funcionalidades" class="hover:text-cyan-400 transition">Módulos</a>
+        <a href="#metricas" class="hover:text-cyan-400 transition">Costes & Tarifas</a>
+        <a href="#contacto" class="hover:text-cyan-400 transition">Contacto</a>
+      </nav>
+      <a href="#contacto" class="hidden sm:inline-flex px-4 py-2 text-sm font-semibold text-slate-900 bg-cyan-400 hover:bg-cyan-300 rounded-lg transition shadow-md shadow-cyan-400/10">
+        Solicitar Piloto
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-20 pb-24 overflow-hidden border-b border-slate-850">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(6,182,212,0.12),transparent_50%)]"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-950/40 text-cyan-400 text-xs font-semibold mb-6">
+        <span>PropTech & Facility OS</span>
+        <span class="w-1 h-1 rounded-full bg-cyan-400"></span>
+        <span>Entornos Comerciales Aeroportuarios</span>
+      </div>
+      
+      <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-white max-w-4xl leading-tight">
+        Control de incidencias, contratas y suministros en locales arrendados.
+      </h1>
+      
+      <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed">
+        Plataforma unificada para gestores de inmuebles en aeropuertos: cuantifica el coste real de horas técnicas, audita suministros de agua y luz, y optimiza el margen neto de cada concesión comercial.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#contacto" class="px-6 py-3 text-base font-semibold text-slate-950 bg-cyan-400 hover:bg-cyan-300 rounded-xl transition shadow-lg shadow-cyan-500/25">
+          Programar Demo Técnica
+        </a>
+        <a href="#funcionalidades" class="px-6 py-3 text-base font-semibold text-slate-300 bg-slate-900 hover:bg-slate-800 border border-slate-800 rounded-xl transition">
+          Ver Módulos de Coste
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA vs SOLUCIÓN -->
+  <section id="solucion" class="py-20 border-b border-slate-850 bg-slate-900/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-bold mb-3">La Problemática Operativa</h2>
+          <h3 class="text-3xl font-bold text-white mb-6">El descontrol de costes en activos comerciales de alta rotación.</h3>
+          <p class="text-slate-400 text-base leading-relaxed mb-6">
+            En un aeropuerto, cada hora de inactividad de un local arrendado (restauración, retail o servicios) genera pérdidas directas. Sin embargo, los partes de mantenimiento externo a menudo carecen de auditoría hora/tarifa, y los consumos de suministros se gestionan de forma fragmentada.
+          </p>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex items-center gap-3">
+              <span class="text-rose-400">✕</span> Partes de avería en papel o emails dispersos sin trazabilidad.
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-rose-400">✕</span> Horas de técnicos facturadas sin imputación exacta al inmueble.
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-rose-400">✕</span> Desfase en repercusión de costes de agua y electricidad al arrendatario.
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 shadow-2xl">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Simulador de Imputación de Coste</span>
+            <span class="px-2 py-0.5 rounded text-xs bg-emerald-950 text-emerald-400 border border-emerald-800">En Ejecución</span>
+          </div>
+          
+          <div class="space-y-4 text-sm">
+            <div class="flex justify-between items-center text-slate-300">
+              <span>Local:</span>
+              <span class="font-semibold text-white">T4-Zona Comercial L-12</span>
+            </div>
+            <div class="flex justify-between items-center text-slate-300">
+              <span>Tipo Incidencia:</span>
+              <span class="text-amber-400 font-medium">Fontanería de urgencia</span>
+            </div>
+            <div class="flex justify-between items-center text-slate-300">
+              <span>Empresa Mantenedora:</span>
+              <span class="text-white">Mantenimientos Integrales S.L.</span>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950 border border-slate-850 space-y-2">
+              <div class="flex justify-between text-xs text-slate-400">
+                <span>Tiempo invertido:</span>
+                <span class="text-white font-mono">3.5 horas</span>
+              </div>
+              <div class="flex justify-between text-xs text-slate-400">
+                <span>Tarifa / Hora:</span>
+                <span class="text-white font-mono">80,00 €/h</span>
+              </div>
+              <div class="pt-2 border-t border-slate-800 flex justify-between font-bold text-sm">
+                <span class="text-cyan-400">Coste Directo Reparación:</span>
+                <span class="text-cyan-400 font-mono">280,00 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES / MÓDULOS -->
+  <section id="funcionalidades" class="py-20 border-b border-slate-850">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-bold mb-3">Módulos de la Plataforma</h2>
+        <p class="text-3xl font-bold text-white">Diseñado para cubrir el ciclo de vida completo del local</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-cyan-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl font-bold mb-6">
+            🛠️
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Gestor de Incidencias & Partes</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Apertura de tickets categorizados por inmueble y terminal. Asignación inmediata a contratas externas con seguimiento en tiempo real de SLA.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-850 hover:border-cyan-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-blue-950/60 border border-blue-500/20 flex items-center justify-center text-blue-400 text-xl font-bold mb-6">
+            ⏱️
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Cuantificación por Horas y Tarifas</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Matriz de precios por categoría técnica (fontaneros a 80 €/h, electricistas, climatización). Cálculo exacto del coste repercutible al operador.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-850 hover:border-cyan-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-950/60 border border-amber-500/20 flex items-center justify-center text-amber-400 text-xl font-bold mb-6">
+            ⚡
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Auditoría de Suministros</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Registro y liquidación de consumos de agua, electricidad y climatización por metro cuadrado y local, facilitando la refacturación automática.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-850 hover:border-cyan-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-950/60 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl font-bold mb-6">
+            📈
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Balance Financiero Local por Local</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Cruce automático: ingresos por arrendamiento fijo/variable versus gastos operativos generados por incidencias y suministros.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-850 hover:border-cyan-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-purple-950/60 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl font-bold mb-6">
+            🏢
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Directorio de Contratistas</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Evaluación del rendimiento y puntualidad de las empresas de mantenimiento con cuadros de mando y comparativas tarifarias.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-850 hover:border-cyan-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-rose-950/60 border border-rose-500/20 flex items-center justify-center text-rose-400 text-xl font-bold mb-6">
+            🤖
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">IA Predictiva & Auditoría de Partes</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Detección de sobrecostes en presupuestos y predicción de averías recurrentes en climatización o fontanería según histórico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO / CONTACTO -->
+  <section id="contacto" class="py-24 bg-slate-950">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">¿Preparado para digitalizar la gestión técnica?</h2>
+      <p class="text-slate-400 mb-8">
+        Solicita una versión de prueba o contacta con el equipo de desarrollo para adaptar los flujos a los pliegos de tu organización.
+      </p>
+
+      <form class="space-y-4 max-w-md mx-auto text-left" onsubmit="event.preventDefault(); alert('Gracias. Tu solicitud ha sido registrada en el sistema de demostración.');">
+        <div>
+          <label class="block text-xs uppercase text-slate-400 font-semibold mb-1">Nombre y Cargo</label>
+          <input type="text" required placeholder="Ej. Responsable Técnico / Property Manager" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+        </div>
+        <div>
+          <label class="block text-xs uppercase text-slate-400 font-semibold mb-1">Email Profesional</label>
+          <input type="email" required placeholder="tu.nombre@aeropuerto-o-empresa.com" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+        </div>
+        <div>
+          <label class="block text-xs uppercase text-slate-400 font-semibold mb-1">Volumen de Activos / Locales</label>
+          <select class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400">
+            <option>Menos de 20 locales</option>
+            <option>Entre 20 y 100 locales</option>
+            <option>Más de 100 locales / Múltiples terminales</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full py-3.5 bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-bold rounded-lg transition shadow-lg shadow-cyan-400/20">
+          Solicitar Acceso a la Plataforma
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 border-t border-slate-900 text-center text-xs text-slate-500">
+    <p>&copy; 2026 AeroFacility PropTech Systems. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
